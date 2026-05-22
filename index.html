@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Snap Score Cash Machine</title>
+
+<style>
+body{
+margin:0;
+font-family:Arial,sans-serif;
+background:#fffc00;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+
+.container{
+background:white;
+padding:30px;
+border-radius:20px;
+width:320px;
+text-align:center;
+box-shadow:0 0 20px rgba(0,0,0,.2);
+}
+
+input{
+width:90%;
+padding:12px;
+margin:15px 0;
+border-radius:10px;
+border:1px solid #ccc;
+}
+
+button{
+background:black;
+color:white;
+border:none;
+padding:12px 20px;
+border-radius:10px;
+cursor:pointer;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<h1>💸 Snap Score Cash Machine</h1>
+
+<p>Convert your Snap Score into real money instantly!</p>
+
+<input
+type="number"
+id="score"
+placeholder="Enter Snap Score">
+
+<br>
+
+<button onclick="goNext()">
+Convert
+</button>
+
+</div>
+
+<script>
+function goNext(){
+
+let score =
+document.getElementById(
+"score"
+).value;
+
+localStorage.setItem(
+"snapscore",
+score
+);
+
+window.location=
+"result.html";
+
+}
+</script>
+
+</body>
+</html>
