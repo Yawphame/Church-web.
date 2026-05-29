@@ -495,3 +495,15 @@ td{
   }
 
 }
+/* CLIENTS PAGE */
+
+.client-avatar{
+  width:42px;
+  height:42px;
+  border-radius:50%;
+  background:#2563eb;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-weight:700;
+}
