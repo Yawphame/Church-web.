@@ -367,3 +367,131 @@ td{
 .welcome-banner p{
   color:#dbeafe;
 }
+/* PREMIUM INVOICES PAGE */
+
+.active-link{
+  color:white !important;
+}
+
+.topbar-text{
+  color:#94a3b8;
+  margin-top:8px;
+}
+
+.invoice-summary{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(220px,1fr));
+  gap:20px;
+  margin-bottom:35px;
+}
+
+.summary-card{
+  background:#1e293b;
+  padding:28px;
+  border-radius:20px;
+  border:1px solid rgba(255,255,255,0.05);
+  transition:0.3s;
+}
+
+.summary-card:hover{
+  transform:translateY(-6px);
+}
+
+.summary-card span{
+  color:#94a3b8;
+  font-size:0.95rem;
+}
+
+.summary-card h2{
+  font-size:2rem;
+  margin:15px 0 10px;
+}
+
+.summary-card small{
+  color:#3b82f6;
+}
+
+.invoice-table-section{
+  background:#1e293b;
+  padding:30px;
+  border-radius:20px;
+  border:1px solid rgba(255,255,255,0.05);
+}
+
+.table-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:20px;
+  margin-bottom:30px;
+}
+
+.table-header h2{
+  margin-bottom:8px;
+}
+
+.table-header p{
+  color:#94a3b8;
+}
+
+.table-header input{
+  background:#0f172a;
+  border:none;
+  padding:15px;
+  border-radius:14px;
+  color:white;
+  width:260px;
+  outline:none;
+}
+
+table{
+  width:100%;
+  border-collapse:collapse;
+}
+
+th{
+  color:#94a3b8;
+  font-weight:500;
+  padding:18px 12px;
+  text-align:left;
+}
+
+td{
+  padding:20px 12px;
+  border-top:1px solid rgba(255,255,255,0.06);
+}
+
+.status{
+  padding:8px 14px;
+  border-radius:30px;
+  font-size:0.9rem;
+  font-weight:600;
+}
+
+.paid-status{
+  background:rgba(34,197,94,0.15);
+  color:#22c55e;
+}
+
+.pending-status{
+  background:rgba(245,158,11,0.15);
+  color:#f59e0b;
+}
+
+.overdue-status{
+  background:rgba(239,68,68,0.15);
+  color:#ef4444;
+}
+
+@media(max-width:768px){
+
+  .table-header{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+
+  .table-header input{
+    width:100%;
+  }
+
+}
