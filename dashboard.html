@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard - InvoiceNest</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      display: flex;
+      height: 100vh;
+      background: #f5f6fa;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 220px;
+      background: #111827;
+      color: #fff;
+      padding: 20px;
+    }
+
+    .sidebar h2 {
+      margin-bottom: 30px;
+      font-size: 20px;
+    }
+
+    .sidebar a {
+      display: block;
+      color: #cbd5e1;
+      text-decoration: none;
+      margin: 15px 0;
+      font-size: 14px;
+    }
+
+    .sidebar a:hover {
+      color: #fff;
+    }
+
+    /* Main */
+    .main {
+      flex: 1;
+      padding: 20px;
+      overflow-y: auto;
+    }
+
+    /* Top Cards */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+
+    .card {
+      background: #fff;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    .card h3 {
+      font-size: 14px;
+      color: #6b7280;
+    }
+
+    .card p {
+      font-size: 20px;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    /* Table */
+    table {
+      width: 100%;
+      background: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    th, td {
+      padding: 12px;
+      text-align: left;
+      font-size: 14px;
+    }
+
+    th {
+      background: #f3f4f6;
+    }
+
+    tr:nth-child(even) {
+      background: #fafafa;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2>InvoiceNest</h2>
+    <a href="#">Dashboard</a>
+    <a href="#">Invoices</a>
+    <a href="#">Clients</a>
+    <a href="#">Payments</a>
+    <a href="#">Settings</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main">
+
+    <!-- Cards -->
+    <div class="cards">
+      <div class="card">
+        <h3>Total Revenue</h3>
+        <p>$0</p>
+      </div>
+
+      <div class="card">
+        <h3>Paid Invoices</h3>
+        <p>0</p>
+      </div>
+
+      <div class="card">
+        <h3>Pending Payments</h3>
+        <p>0</p>
+      </div>
+
+      <div class="card">
+        <h3>Clients</h3>
+        <p>0</p>
+      </div>
+    </div>
+
+    <!-- Recent Invoices -->
+    <h3 style="margin-bottom:10px;">Recent Invoices</h3>
+
+    <table>
+      <tr>
+        <th>Invoice</th>
+        <th>Client</th>
+        <th>Status</th>
+        <th>Amount</th>
+      </tr>
+
+      <tr>
+        <td>#001</td>
+        <td>John Doe</td>
+        <td>Paid</td>
+        <td>$120</td>
+      </tr>
+
+      <tr>
+        <td>#002</td>
+        <td>Jane Smith</td>
+        <td>Pending</td>
+        <td>$80</td>
+      </tr>
+    </table>
+
+  </div>
+
+</body>
+</html>
