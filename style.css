@@ -600,3 +600,10 @@ td{
   font-size:1rem;
   outline:none;
 }
+/* BUTTON LINKS */
+
+.primary-btn,
+.secondary-btn{
+  text-decoration:none;
+  display:inline-block;
+}
