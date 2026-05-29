@@ -72,3 +72,40 @@ if(invoiceForm){
   });
 
 }
+// DISPLAY SAVED INVOICES
+
+const invoiceList =
+  document.querySelector("#invoice-list");
+
+if(invoiceList){
+
+  const invoices =
+    JSON.parse(localStorage.getItem("invoices")) || [];
+
+  invoices.forEach(function(invoice){
+
+    const row = document.createElement("tr");
+
+    row.innerHTML = `
+    
+      <td>${invoice.clientName}</td>
+
+      <td>${invoice.clientEmail}</td>
+
+      <td>$${invoice.amount}</td>
+
+      <td>${invoice.dueDate}</td>
+
+      <td>
+        <span class="status">
+          ${invoice.status}
+        </span>
+      </td>
+    
+    `;
+
+    invoiceList.appendChild(row);
+
+  });
+
+}
