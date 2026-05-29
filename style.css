@@ -275,3 +275,73 @@ td{
   }
 
 }
+/* AUTH PAGES */
+
+.auth-page{
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:20px;
+}
+
+.auth-box{
+  width:100%;
+  max-width:420px;
+  background:#111827;
+  padding:40px 30px;
+  border-radius:20px;
+  border:1px solid rgba(255,255,255,0.08);
+}
+
+.auth-box h1{
+  font-size:2rem;
+  margin-bottom:10px;
+}
+
+.auth-box p{
+  color:#cbd5e1;
+  margin-bottom:30px;
+  line-height:1.6;
+}
+
+.auth-box form{
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+}
+
+.auth-box input{
+  background:#1e293b;
+  border:none;
+  padding:16px;
+  border-radius:12px;
+  color:white;
+  font-size:1rem;
+}
+
+.auth-box input:focus{
+  outline:2px solid #3b82f6;
+}
+
+.auth-box button{
+  background:#3b82f6;
+  color:white;
+  border:none;
+  padding:16px;
+  border-radius:12px;
+  font-size:1rem;
+  cursor:pointer;
+  font-weight:600;
+}
+
+.auth-link{
+  margin-top:25px;
+  text-align:center;
+  color:#cbd5e1;
+}
+
+.auth-link a{
+  color:#3b82f6;
+  text-decoration:none;
+}
