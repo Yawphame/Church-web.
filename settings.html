@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Settings - InvoiceNest</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="dashboard">
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+      <div class="sidebar-logo">
+        InvoiceNest
+      </div>
+
+      <nav class="sidebar-menu">
+
+        <a href="dashboard.html">Dashboard</a>
+
+        <a href="invoices.html">Invoices</a>
+
+        <a href="clients.html">Clients</a>
+
+        <a href="#">Payments</a>
+
+        <a href="settings.html" class="active-link">
+          Settings
+        </a>
+
+      </nav>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+
+    <main class="main-content">
+
+      <!-- TOPBAR -->
+
+      <header class="topbar">
+
+        <div>
+
+          <h1>Settings</h1>
+
+          <p class="topbar-text">
+            Manage your business account and preferences.
+          </p>
+
+        </div>
+
+      </header>
+
+
+      <!-- PROFILE SETTINGS -->
+
+      <section class="settings-section">
+
+        <h2>Business Profile</h2>
+
+        <div class="settings-grid">
+
+          <div class="input-group">
+            <label>Business Name</label>
+            <input type="text" placeholder="InvoiceNest Ltd">
+          </div>
+
+          <div class="input-group">
+            <label>Email Address</label>
+            <input type="email" placeholder="business@email.com">
+          </div>
+
+          <div class="input-group">
+            <label>Phone Number</label>
+            <input type="text" placeholder="+1 000 000 000">
+          </div>
+
+          <div class="input-group">
+            <label>Business Address</label>
+            <input type="text" placeholder="New York, USA">
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- SECURITY -->
+
+      <section class="settings-section">
+
+        <h2>Security</h2>
+
+        <div class="settings-grid">
+
+          <div class="input-group">
+            <label>Current Password</label>
+            <input type="password" placeholder="••••••••">
+          </div>
+
+          <div class="input-group">
+            <label>New Password</label>
+            <input type="password" placeholder="••••••••">
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- PREFERENCES -->
+
+      <section class="settings-section">
+
+        <h2>Preferences</h2>
+
+        <div class="settings-grid">
+
+          <div class="input-group">
+            <label>Default Currency</label>
+
+            <select>
+
+              <option>USD - US Dollar</option>
+
+              <option>EUR - Euro</option>
+
+              <option>GBP - British Pound</option>
+
+            </select>
+
+          </div>
+
+
+          <div class="input-group">
+            <label>Email Notifications</label>
+
+            <select>
+
+              <option>Enabled</option>
+
+              <option>Disabled</option>
+
+            </select>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- SAVE BUTTON -->
+
+      <button class="save-settings-btn">
+        Save Changes
+      </button>
+
+    </main>
+
+  </div>
+
+</body>
+
+</html>
