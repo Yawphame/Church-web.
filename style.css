@@ -345,3 +345,25 @@ td{
   color:#3b82f6;
   text-decoration:none;
 }
+/* WELCOME BANNER */
+
+.welcome-banner{
+  background:linear-gradient(
+    135deg,
+    #2563eb,
+    #1d4ed8
+  );
+
+  padding:30px;
+  border-radius:20px;
+  margin-bottom:30px;
+}
+
+.welcome-banner h2{
+  font-size:2rem;
+  margin-bottom:10px;
+}
+
+.welcome-banner p{
+  color:#dbeafe;
+}
