@@ -92,15 +92,6 @@ nav a{
   background:rgba(255,255,255,0.05);
 }
 
-@media(max-width:768px){
-  .hero h1{
-    font-size:2.5rem;
-  }
-
-  nav{
-    display:none;
-  }
-}
 .features{
   padding:100px 8%;
   background:#111827;
@@ -139,4 +130,16 @@ nav a{
 .feature-card p{
   color:#cbd5e1;
   line-height:1.7;
+}
+
+@media(max-width:768px){
+
+  .hero h1{
+    font-size:2.5rem;
+  }
+
+  nav{
+    display:none;
+  }
+
 }
