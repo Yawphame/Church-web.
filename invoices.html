@@ -28,17 +28,21 @@
 
       <nav class="sidebar-menu">
 
-  <a href="dashboard.html">Dashboard</a>
+        <a href="dashboard.html">Dashboard</a>
 
-  <a href="invoices.html">Invoices</a>
+        <a href="invoices.html" class="active-link">
+          Invoices
+        </a>
 
-  <a href="clients.html">Clients</a>
+        <a href="clients.html">Clients</a>
 
-  <a href="create-invoice.html">Create Invoice</a>
+        <a href="create-invoice.html">
+          Create Invoice
+        </a>
 
-  <a href="settings.html">Settings</a>
+        <a href="settings.html">Settings</a>
 
-</nav>
+      </nav>
 
     </aside>
 
@@ -47,8 +51,6 @@
 
     <main class="main-content">
 
-      <!-- TOPBAR -->
-
       <header class="topbar">
 
         <div>
@@ -56,66 +58,16 @@
           <h1>Invoices</h1>
 
           <p class="topbar-text">
-            Manage and track all your invoices easily.
+            All generated invoices appear here automatically.
           </p>
 
         </div>
 
-        <button class="create-btn">
+        <a href="create-invoice.html" class="create-btn">
           + New Invoice
-        </button>
+        </a>
 
       </header>
-
-
-      <!-- ANALYTICS CARDS -->
-
-      <section class="invoice-summary">
-
-        <div class="summary-card">
-
-          <span>Total Revenue</span>
-
-          <h2>$48,250</h2>
-
-          <small>+12% this month</small>
-
-        </div>
-
-
-        <div class="summary-card">
-
-          <span>Paid Invoices</span>
-
-          <h2>94</h2>
-
-          <small>Stable payments</small>
-
-        </div>
-
-
-        <div class="summary-card">
-
-          <span>Pending</span>
-
-          <h2>21</h2>
-
-          <small>Awaiting payment</small>
-
-        </div>
-
-
-        <div class="summary-card">
-
-          <span>Overdue</span>
-
-          <h2>13</h2>
-
-          <small>Need attention</small>
-
-        </div>
-
-      </section>
 
 
       <!-- TABLE SECTION -->
@@ -126,15 +78,13 @@
 
           <div>
 
-            <h2>Recent Invoices</h2>
+            <h2>Saved Invoices</h2>
 
             <p>
-              Track latest client transactions.
+              Your generated invoices are stored locally.
             </p>
 
           </div>
-
-          <input type="text" placeholder="Search invoices...">
 
         </div>
 
@@ -145,13 +95,13 @@
 
             <tr>
 
-              <th>Invoice ID</th>
-
               <th>Client</th>
+
+              <th>Email</th>
 
               <th>Amount</th>
 
-              <th>Date</th>
+              <th>Due Date</th>
 
               <th>Status</th>
 
@@ -160,82 +110,7 @@
           </thead>
 
 
-          <tbody>
-
-            <tr>
-
-              <td>#INV-1024</td>
-
-              <td>Nova Agency</td>
-
-              <td>$850</td>
-
-              <td>May 12</td>
-
-              <td>
-                <span class="status paid-status">
-                  Paid
-                </span>
-              </td>
-
-            </tr>
-
-
-            <tr>
-
-              <td>#INV-1025</td>
-
-              <td>Pixel Studio</td>
-
-              <td>$1,200</td>
-
-              <td>May 14</td>
-
-              <td>
-                <span class="status pending-status">
-                  Pending
-                </span>
-              </td>
-
-            </tr>
-
-
-            <tr>
-
-              <td>#INV-1026</td>
-
-              <td>Bright Labs</td>
-
-              <td>$450</td>
-
-              <td>May 15</td>
-
-              <td>
-                <span class="status overdue-status">
-                  Overdue
-                </span>
-              </td>
-
-            </tr>
-
-
-            <tr>
-
-              <td>#INV-1027</td>
-
-              <td>Vision Tech</td>
-
-              <td>$980</td>
-
-              <td>May 17</td>
-
-              <td>
-                <span class="status paid-status">
-                  Paid
-                </span>
-              </td>
-
-            </tr>
+          <tbody id="invoice-list">
 
           </tbody>
 
@@ -246,6 +121,9 @@
     </main>
 
   </div>
+
+
+  <script src="script.js"></script>
 
 </body>
 
