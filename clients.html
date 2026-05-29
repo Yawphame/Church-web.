@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Clients - InvoiceNest</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="dashboard">
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+      <div class="sidebar-logo">
+        InvoiceNest
+      </div>
+
+      <nav class="sidebar-menu">
+
+        <a href="dashboard.html">Dashboard</a>
+
+        <a href="invoices.html">Invoices</a>
+
+        <a href="clients.html" class="active-link">
+          Clients
+        </a>
+
+        <a href="#">Payments</a>
+
+        <a href="#">Settings</a>
+
+      </nav>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+
+    <main class="main-content">
+
+      <!-- TOPBAR -->
+
+      <header class="topbar">
+
+        <div>
+
+          <h1>Clients</h1>
+
+          <p class="topbar-text">
+            Manage all your business clients in one place.
+          </p>
+
+        </div>
+
+        <button class="create-btn">
+          + Add Client
+        </button>
+
+      </header>
+
+
+      <!-- CLIENT STATS -->
+
+      <section class="invoice-summary">
+
+        <div class="summary-card">
+
+          <span>Total Clients</span>
+
+          <h2>24</h2>
+
+          <small>+4 new this month</small>
+
+        </div>
+
+
+        <div class="summary-card">
+
+          <span>Active Projects</span>
+
+          <h2>18</h2>
+
+          <small>Currently ongoing</small>
+
+        </div>
+
+
+        <div class="summary-card">
+
+          <span>Paid Clients</span>
+
+          <h2>15</h2>
+
+          <small>Consistent payments</small>
+
+        </div>
+
+
+        <div class="summary-card">
+
+          <span>Pending Clients</span>
+
+          <h2>9</h2>
+
+          <small>Need follow up</small>
+
+        </div>
+
+      </section>
+
+
+      <!-- CLIENT TABLE -->
+
+      <section class="invoice-table-section">
+
+        <div class="table-header">
+
+          <div>
+
+            <h2>Client Directory</h2>
+
+            <p>
+              Keep track of all client activities.
+            </p>
+
+          </div>
+
+          <input type="text" placeholder="Search clients...">
+
+        </div>
+
+
+        <table>
+
+          <thead>
+
+            <tr>
+
+              <th>Client</th>
+
+              <th>Email</th>
+
+              <th>Projects</th>
+
+              <th>Total Paid</th>
+
+              <th>Status</th>
+
+            </tr>
+
+          </thead>
+
+
+          <tbody>
+
+            <tr>
+
+              <td>Nova Agency</td>
+
+              <td>nova@email.com</td>
+
+              <td>12</td>
+
+              <td>$12,500</td>
+
+              <td>
+                <span class="status paid-status">
+                  Active
+                </span>
+              </td>
+
+            </tr>
+
+
+            <tr>
+
+              <td>Pixel Studio</td>
+
+              <td>pixel@email.com</td>
+
+              <td>7</td>
+
+              <td>$7,800</td>
+
+              <td>
+                <span class="status pending-status">
+                  Pending
+                </span>
+              </td>
+
+            </tr>
+
+
+            <tr>
+
+              <td>Bright Labs</td>
+
+              <td>bright@email.com</td>
+
+              <td>4</td>
+
+              <td>$3,200</td>
+
+              <td>
+                <span class="status overdue-status">
+                  Inactive
+                </span>
+              </td>
+
+            </tr>
+
+
+            <tr>
+
+              <td>Vision Tech</td>
+
+              <td>vision@email.com</td>
+
+              <td>15</td>
+
+              <td>$18,900</td>
+
+              <td>
+                <span class="status paid-status">
+                  Active
+                </span>
+              </td>
+
+            </tr>
+
+          </tbody>
+
+        </table>
+
+      </section>
+
+    </main>
+
+  </div>
+
+</body>
+
+</html>
