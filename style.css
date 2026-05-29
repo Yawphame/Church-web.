@@ -558,3 +558,45 @@ td{
   cursor:pointer;
   font-weight:600;
 }
+/* CREATE INVOICE PAGE */
+
+.invoice-form-section{
+  background:#1e293b;
+  padding:30px;
+  border-radius:20px;
+  border:1px solid rgba(255,255,255,0.05);
+}
+
+.invoice-form{
+  display:flex;
+  flex-direction:column;
+  gap:25px;
+}
+
+.form-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+  gap:20px;
+}
+
+.invoice-form textarea{
+  background:#0f172a;
+  border:none;
+  min-height:160px;
+  padding:16px;
+  border-radius:14px;
+  color:white;
+  resize:none;
+  font-size:1rem;
+  outline:none;
+}
+
+.invoice-form select{
+  background:#0f172a;
+  border:none;
+  padding:16px;
+  border-radius:14px;
+  color:white;
+  font-size:1rem;
+  outline:none;
+}
