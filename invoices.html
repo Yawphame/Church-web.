@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Invoices - InvoiceNest</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="dashboard">
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+      <div class="sidebar-logo">
+        InvoiceNest
+      </div>
+
+      <nav class="sidebar-menu">
+
+        <a href="dashboard.html">Dashboard</a>
+
+        <a href="invoices.html" class="active-link">
+          Invoices
+        </a>
+
+        <a href="#">Clients</a>
+
+        <a href="#">Payments</a>
+
+        <a href="#">Settings</a>
+
+      </nav>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+
+    <main class="main-content">
+
+      <!-- TOPBAR -->
+
+      <header class="topbar">
+
+        <div>
+
+          <h1>Invoices</h1>
+
+          <p class="topbar-text">
+            Manage and track all your invoices easily.
+          </p>
+
+        </div>
+
+        <button class="create-btn">
+          + New Invoice
+        </button>
+
+      </header>
+
+
+      <!-- ANALYTICS CARDS -->
+
+      <section class="invoice-summary">
+
+        <div class="summary-card">
+
+          <span>Total Revenue</span>
+
+          <h2>$48,250</h2>
+
+          <small>+12% this month</small>
+
+        </div>
+
+
+        <div class="summary-card">
+
+          <span>Paid Invoices</span>
+
+          <h2>94</h2>
+
+          <small>Stable payments</small>
+
+        </div>
+
+
+        <div class="summary-card">
+
+          <span>Pending</span>
+
+          <h2>21</h2>
+
+          <small>Awaiting payment</small>
+
+        </div>
+
+
+        <div class="summary-card">
+
+          <span>Overdue</span>
+
+          <h2>13</h2>
+
+          <small>Need attention</small>
+
+        </div>
+
+      </section>
+
+
+      <!-- TABLE SECTION -->
+
+      <section class="invoice-table-section">
+
+        <div class="table-header">
+
+          <div>
+
+            <h2>Recent Invoices</h2>
+
+            <p>
+              Track latest client transactions.
+            </p>
+
+          </div>
+
+          <input type="text" placeholder="Search invoices...">
+
+        </div>
+
+
+        <table>
+
+          <thead>
+
+            <tr>
+
+              <th>Invoice ID</th>
+
+              <th>Client</th>
+
+              <th>Amount</th>
+
+              <th>Date</th>
+
+              <th>Status</th>
+
+            </tr>
+
+          </thead>
+
+
+          <tbody>
+
+            <tr>
+
+              <td>#INV-1024</td>
+
+              <td>Nova Agency</td>
+
+              <td>$850</td>
+
+              <td>May 12</td>
+
+              <td>
+                <span class="status paid-status">
+                  Paid
+                </span>
+              </td>
+
+            </tr>
+
+
+            <tr>
+
+              <td>#INV-1025</td>
+
+              <td>Pixel Studio</td>
+
+              <td>$1,200</td>
+
+              <td>May 14</td>
+
+              <td>
+                <span class="status pending-status">
+                  Pending
+                </span>
+              </td>
+
+            </tr>
+
+
+            <tr>
+
+              <td>#INV-1026</td>
+
+              <td>Bright Labs</td>
+
+              <td>$450</td>
+
+              <td>May 15</td>
+
+              <td>
+                <span class="status overdue-status">
+                  Overdue
+                </span>
+              </td>
+
+            </tr>
+
+
+            <tr>
+
+              <td>#INV-1027</td>
+
+              <td>Vision Tech</td>
+
+              <td>$980</td>
+
+              <td>May 17</td>
+
+              <td>
+                <span class="status paid-status">
+                  Paid
+                </span>
+              </td>
+
+            </tr>
+
+          </tbody>
+
+        </table>
+
+      </section>
+
+    </main>
+
+  </div>
+
+</body>
+
+</html>
